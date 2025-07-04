@@ -7,13 +7,25 @@ authors = [
 description = "A Python package for calculating day count conventions."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "pre-commit>=4.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=25.1.0",
+    "mypy>=1.16.1",
+    "pytest>=8.4.1",
+    "pytest-cov>=6.2.1",
+    "ruff>=0.12.2",
+]
 
 [dependency-groups]
 dev = [
     "black>=25.1.0",
     "mypy>=1.16.1",
     "pytest>=8.4.1",
+    "pytest-cov>=6.2.1",
     "ruff>=0.12.2",
 ]
 
